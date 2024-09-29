@@ -10,7 +10,7 @@ import backoff
 app = Flask(__name__)
 
 # MongoDB configuration
-DATABASE_URL = os.environ.get("mongodb+srv://namanjain123eudhc:opmaster@cluster0.5iokvxo.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 client = MongoClient(DATABASE_URL)
 db = client.IITSCHOOL  # Database name
 lectures_collection = db.lectures  # Collection name
